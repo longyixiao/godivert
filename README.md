@@ -5,16 +5,17 @@ go语言使用开源divert库进程流量控制
 
 ### 例子
 捕获和打印数据包
+
 package main
+
 import (
     "fmt"
+    
     "github.com/longyixiao/godivert"
 )
 
 func main() {
-
     winDivert, err := godivert.NewWinDivertHandle("true")
-    
     if err != nil {
         panic(err)
     }
